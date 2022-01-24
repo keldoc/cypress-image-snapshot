@@ -1,6 +1,6 @@
 {
   "name": "cypress-image-snapshot",
-  "version": "4.0.1",
+  "version": "4.0.1-keldoc.0",
   "description": "Cypress bindings for jest-image-snapshot.",
   "repository": "https://github.com/palmerhq/cypress-image-snapshot",
   "author": "Jack Cross <jack@palmer.net>",
@@ -18,7 +18,7 @@
     "lint": "eslint src",
     "prepublish": "npm run build",
     "changeset": "changeset",
-    "release": "changeset publish"
+    "releaseF": "changeset publish"
   },
   "dependencies": {
     "chalk": "^2.4.1",
