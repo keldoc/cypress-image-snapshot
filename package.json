@@ -1,5 +1,5 @@
 {
-  "name": "cypress-image-snapshot",
+  "name": "@keldoc/cypress-image-snapshot",
   "version": "4.0.1-keldoc.0",
   "description": "Cypress bindings for jest-image-snapshot.",
   "repository": "https://github.com/palmerhq/cypress-image-snapshot",
