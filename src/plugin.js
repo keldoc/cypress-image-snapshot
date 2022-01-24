@@ -67,7 +67,6 @@ export function matchImageSnapshotPlugin({ path: screenshotPath }) {
   } = snapshotOptions;
 
   const receivedImageBuffer = fs.readFileSync(screenshotPath);
-  fs.removeSync(screenshotPath);
 
   const { dir: screenshotDir, name } = path.parse(
     screenshotPath
@@ -123,6 +122,7 @@ export function matchImageSnapshotPlugin({ path: screenshotPath }) {
     };
   }
 
+  fs.removeSync(screenshotPath);
   fs.copySync(snapshotKebabPath, snapshotDotPath);
   fs.removeSync(snapshotKebabPath);
   snapshotResult.diffOutputPath = snapshotDotPath;
